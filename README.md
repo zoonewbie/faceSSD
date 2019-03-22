@@ -12,5 +12,5 @@
 ## Q: What the experimental work will be done?
 ### I try to solve several puzzles in the followling days and recording the result here. 
 ### 1. Try to train the model without fine tune checkpoints and find out the minimum steps when models begin to build instinct。  
-### 2. Try a new way of training SSD: at first set the model at 150*150, then modify to 360*360 and continue training, then 512*512.
-### if the above trying is failed, I may try to use inject the previous training checkpoint as fine tune of the further training.
+### 2. Try a new way of training SSD: at first set the model at 150x150, then modify to 360x360 and continue training, then 512x512.
+### if the above trying fails, I may try to use the previous training checkpoint as fine tune of the further training.
