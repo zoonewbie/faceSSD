@@ -15,3 +15,9 @@
 ### 1. Try to train the model without fine tune checkpoints and find out the minimum steps when models begin to build instinct。  
 ### 2. Try a new way of training SSD: at first set the model at 150x150, then modify to 360x360 and continue training, then 512x512.
 ### if the above trying fails, I may try to use the previous training checkpoint as fine tune of the further training.
+
+
+## Update: 
+### step 1: 
+![mobilenetV1 150x150 300K](https://github.com/zoonewbie/faceSSD/raw/master/keypoints/v1/v1_150x150_300K/Screenshot3.png) 
+mobilenetV1 is the fastest to train. 
