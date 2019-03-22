@@ -23,5 +23,8 @@
 ![mobilenetV1 150x150 300K](https://github.com/zoonewbie/faceSSD/raw/master/keypoints/v1/v1_150x150_300K/Screenshot5.png) 
  
 
-### step 2: mobilenetV1/TPU/batch size 128/500K  .
+### step 2: mobilenetV1/TPU/batch size 128/500K.
 ![mobilenetV1 150x150 500K TPU](https://github.com/zoonewbie/faceSSD/raw/master/SSD/v1/TPU/Screenshot1.png)
+![mobilenetV1 150x150 500K TPU](https://github.com/zoonewbie/faceSSD/raw/master/SSD/v1/TPU/Screenshot2.png)
+### Evaluation result shows that even though training on TPU yields lower values of loss(500K steps on TPU vs. 300K steps on GPU). GPU's work is better.
+
