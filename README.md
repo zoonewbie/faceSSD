@@ -28,3 +28,8 @@
 ![mobilenetV1 150x150 500K TPU](https://github.com/zoonewbie/faceSSD/raw/master/SSD/v1/TPU/Screenshot2.png)
 ### Evaluation result shows that even though training on TPU yields lower values of loss(batch size 128/500K steps on TPU vs. 300K steps on GPU), GPU's work is better.
 
+
+### step 2: mobilenetV1/TPU/batch size 128/3M.
+![mobilenetV1 150x150 500K TPU](https://github.com/zoonewbie/faceSSD/raw/master/keypoints/v1/v1_150x150_3M/Screenshot1.png)
+### Few people have chance of training 3M steps on TPU. But evaluation results show even the figures look good,  it is far from finished line.
+
