@@ -35,6 +35,6 @@
 ### Ater 3M steps program hangs and refuse to do more training. Digging into source code and finding out there are bugs on TPU estimator evaulation. But I don't have access to modify. Google looks like short of engineers. The object detection project hasn't updated for half year. 
 
 
-### step 3: mobilenetV1/TPU/batch size 128/1M. (https://github.com/zoonewbie/faceSSD/tree/master/keypoints/v1/v1_150x150_3M)
+### step 4: mobilenetV1/TPU/batch size 128/1M. (https://github.com/zoonewbie/faceSSD/tree/master/keypoints/v1/v1_150x150_3M)
 ![mobilenetV1 150x150 500K TPU](https://github.com/zoonewbie/faceSSD/raw/master/keypoints/v1/v1_150x150_1M_bigger/Screenshot.png)
-### Increacing learning_rate 10 times and trained 1M steps on TPU again. Still no good.
+### Increase learning_rate 10 times and train 1M steps on TPU again. Still no good.
