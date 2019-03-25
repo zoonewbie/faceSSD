@@ -45,5 +45,5 @@
 ![mobilenetV1 150x150 1M GPU](https://github.com/zoonewbie/faceSSD/raw/master/keypoints/v1/v1_150x150_GPU_900K/Screenshot2.png)
 ![mobilenetV1 150x150 1M GPU](https://github.com/zoonewbie/faceSSD/raw/master/keypoints/v1/v1_150x150_GPU_900K/Screenshot3.png)
 ![mobilenetV1 150x150 1M GPU](https://github.com/zoonewbie/faceSSD/raw/master/keypoints/v1/v1_150x150_GPU_900K/Screenshot4.png)
-### Good result. Even some of small size objects can be recognized. Ignore the bad shape of curves. It is a bug of tensorflow when saving event files but I haven't figured out how to fix it.
+### Pretty Good. Even some of small size objects can be recognized. Ignore the bad shape of curves. It is a bug of tensorflow when saving event files but I haven't figured out how to fix it.
 
