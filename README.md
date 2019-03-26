@@ -23,27 +23,33 @@
 ![mobilenetV1 150x150 300K](https://github.com/zoonewbie/faceSSD/raw/master/keypoints/v1/v1_150x150_300K/Screenshot5.png) 
  
 
-### step 2: mobilenetV1/TPU/batch size 128/500K. (https://github.com/zoonewbie/faceSSD/tree/master/SSD/v1/TPU)
+### step 2: mobilenetV1/150x150/TPU/batch size 128/500K. (https://github.com/zoonewbie/faceSSD/tree/master/SSD/v1/TPU)
 ![mobilenetV1 150x150 500K TPU](https://github.com/zoonewbie/faceSSD/raw/master/SSD/v1/TPU/Screenshot1.png)
 ![mobilenetV1 150x150 500K TPU](https://github.com/zoonewbie/faceSSD/raw/master/SSD/v1/TPU/Screenshot2.png)
 ### Evaluation result shows that even though training on TPU yields lower values of loss(batch size 128/500K steps on TPU vs. 300K steps on GPU), GPU's work is better.
 
 
-### step 3: mobilenetV1/TPU/batch size 128/3M. (https://github.com/zoonewbie/faceSSD/tree/master/keypoints/v1/v1_150x150_3M)
+### step 3: mobilenetV1/150x150/TPU/batch size 128/3M. (https://github.com/zoonewbie/faceSSD/tree/master/keypoints/v1/v1_150x150_3M)
 ![mobilenetV1 150x150 500K TPU](https://github.com/zoonewbie/faceSSD/raw/master/keypoints/v1/v1_150x150_3M/Screenshot1.png)
 ### Few people have chance of training 3M steps on TPU. But evaluation results show even the figures look good,  it is far from finished line.
 ### Ater 3M steps program hangs and refuse to do more training. Digging into source code and finding out there are bugs on TPU estimator evaulation. But I don't have access to modify. Google looks like short of engineers. The object detection project hasn't updated for half year. 
 
 
-### step 4: mobilenetV1/TPU/batch size 128/1M. (https://github.com/zoonewbie/faceSSD/tree/master/keypoints/v1/v1_150x150_1M_bigger)
+### step 4: mobilenetV1/150x150/TPU/batch size 128/1M. (https://github.com/zoonewbie/faceSSD/tree/master/keypoints/v1/v1_150x150_1M_bigger)
 ![mobilenetV1 150x150 500K TPU](https://github.com/zoonewbie/faceSSD/raw/master/keypoints/v1/v1_150x150_1M_bigger/Screenshot.png)
 ### Increase learning_rate 10 times and train 1M steps on TPU again. Still no good.
 
 
-### step 5: mobilenetV1/GPU/1M. (https://github.com/zoonewbie/faceSSD/tree/master/keypoints/v1/v1_150x150_GPU_900K)
+### step 5: mobilenetV1/150x150/GPU/1M. (https://github.com/zoonewbie/faceSSD/tree/master/keypoints/v1/v1_150x150_GPU_900K)
 ![mobilenetV1 150x150 1M GPU](https://github.com/zoonewbie/faceSSD/raw/master/keypoints/v1/v1_150x150_GPU_900K/Screenshot1.png)
 ![mobilenetV1 150x150 1M GPU](https://github.com/zoonewbie/faceSSD/raw/master/keypoints/v1/v1_150x150_GPU_900K/Screenshot2.png)
 ![mobilenetV1 150x150 1M GPU](https://github.com/zoonewbie/faceSSD/raw/master/keypoints/v1/v1_150x150_GPU_900K/Screenshot3.png)
 ![mobilenetV1 150x150 1M GPU](https://github.com/zoonewbie/faceSSD/raw/master/keypoints/v1/v1_150x150_GPU_900K/Screenshot4.png)
-### Pretty Good. Even some of small size objects can be recognized. Ignore the bad shape of curves. It is a bug of tensorflow when saving event files but I haven't figured out how to fix it.
+### pretty good. even some of small size objects can be recognized. ignore the bad shape of curves. it is a bug of tensorflow when saving event files but i haven't figured out how to fix it.
 
+### step 6: mobilenetV1/360x360/GPU/1.6M. (https://github.com/zoonewbie/faceSSD/tree/master/keypoints/v1/v1_150_To_360_1_6M)
+![mobilenetv1 360x360 1.6m gpu](hthttps://github.com/zoonewbie/facessd/raw/master/keypoints/v1/v1_150_to_360_1_6m/screenshot1.jpg)
+![mobilenetv1 360x360 1.6m gpu](hthttps://github.com/zoonewbie/facessd/raw/master/keypoints/v1/v1_150_to_360_1_6m/screenshot2.jpg)
+![mobilenetv1 360x360 1.6m gpu](hthttps://github.com/zoonewbie/facessd/raw/master/keypoints/v1/v1_150_to_360_1_6m/screenshot3.jpg)
+![mobilenetv1 360x360 1.6m gpu](hthttps://github.com/zoonewbie/facessd/raw/master/keypoints/v1/v1_150_to_360_1_6m/screenshot4.jpg)
+### Modify the configure to 360x360 and use the checkpoint result from step 5 (150x150) and continue training. The curves are seamless. And Small objects started to be recognized.
