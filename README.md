@@ -57,4 +57,4 @@
 ![mobilenetv1 360x360 1.6m gpu](https://github.com/zoonewbie/faceSSD/raw/master/keypoints/v1/v1_150_To_360_1_6M/screenshot4.jpg
 )
 
-### Modify the configure to 360x360 and use the checkpoint result from step 5 (150x150) and continue training. The curves shows training process continues seamless. And Small objects started to be recognized.
+### Modify the configure to 360x360 and use the checkpoint result from step 5 (150x150) and continue training. The curves shows training process continues seamless. And most small size front-faces can be recognized.
