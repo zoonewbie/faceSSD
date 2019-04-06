@@ -58,3 +58,8 @@
 )
 
 ### Modify the configure to 360x360 and use the checkpoint result from step 5 (150x150) and continue training. The curves shows training process continues seamless. And most small size front-faces can be recognized.
+
+## Now come to the harder part: Training 65 facial keypoints on GPU and TPU. The results are kept at: 
+https://github.com/zoonewbie/FacialKeypointSSDV1TPU
+https://github.com/zoonewbie/FacialKeypointSSDV1GPU
+
