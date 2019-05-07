@@ -26,13 +26,13 @@
 ### step 2: mobilenetV1/150x150/TPU/batch size 128/500K. (https://github.com/zoonewbie/faceSSD/tree/master/SSD/v1/TPU)
 ![mobilenetV1 150x150 500K TPU](https://github.com/zoonewbie/faceSSD/raw/master/SSD/v1/TPU/Screenshot1.png)
 ![mobilenetV1 150x150 500K TPU](https://github.com/zoonewbie/faceSSD/raw/master/SSD/v1/TPU/Screenshot2.png)
-### Evaluation result shows that even though training on TPU yields lower values of loss(batch size 128/500K steps on TPU vs. 300K steps on GPU), GPU's work is better.
+### Evaluation result shows that even though training on TPU yields lower values of loss(batch size 128/500K steps on TPU vs. 300K steps on GPU). TPU training is faster but there are too many bugs in tensorflow of TPU version. Hope google engineers fix them soon. Google looks like short of engineers. The object detection project hasn't updated for half year. 
 
 
 ### step 3: mobilenetV1/150x150/TPU/batch size 128/3M. (https://github.com/zoonewbie/faceSSD/tree/master/keypoints/v1/v1_150x150_3M)
 ![mobilenetV1 150x150 500K TPU](https://github.com/zoonewbie/faceSSD/raw/master/keypoints/v1/v1_150x150_3M/Screenshot1.png)
 ### Few people have chance of training 3M steps on TPU. But evaluation results show even the figures look good,  it is far from finished line.
-### Ater 3M steps program hangs and refuse to do more training. Digging into source code and finding out there are bugs on TPU estimator evaulation. But I don't have access to modify. Google looks like short of engineers. The object detection project hasn't updated for half year. 
+### Ater 3M steps program hangs and refuse to do more training. Digging into source code and finding out there are bugs on TPU estimator evaulation. But I don't have access to modify.
 
 
 ### step 4: mobilenetV1/150x150/TPU/batch size 128/1M. (https://github.com/zoonewbie/faceSSD/tree/master/keypoints/v1/v1_150x150_1M_bigger)
